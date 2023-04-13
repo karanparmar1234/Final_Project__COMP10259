@@ -1,0 +1,113 @@
+$primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$primary-font-size: larger;
+$primary-color: #5AFEE7;
+$secondary-color: #08C6AB;
+$menu-color: yellow;
+$menu-hower: white;
+$dashed-border: dashed;
+
+
+body{
+    margin: 0;
+    background-color: $primary-color;
+  }
+  
+  ul{
+    font-family: $primary-font;
+    font-size: $primary-font-size;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: $secondary-color;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .footer{
+    font-family: $primary-font;
+    font-size: $primary-font-size;;
+    width: 100%;
+    padding: 0;
+    bottom:0;
+    background-color: $secondary-color;
+    position: fixed;
+    overflow: hidden;
+  }
+  .footer a{
+    display: block;
+    display: inline;
+    color: $menu-color;
+    float:left;
+    text-decoration: none;
+    text-align: center;
+    column-span: all;
+    padding: 8px 16px;
+  }
+  .footer a:hover:not(.active){
+    background-color: $menu-color;
+    color: $menu-hower;
+  }
+  
+  li a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active{
+    background-color: $menu-hower;
+    color: $menu-color;
+  }
+  
+  a.active{
+    background-color: $menu-hower;
+    color: $menu-color;
+  }
+
+  li a:hover:not(.active){
+    background-color: $menu-color;
+    color: $menu-hower;
+  }
+
+  div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:20%;
+    padding:1px 16px;
+    height:1000px;
+  }
+  div button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:20%;
+    margin-bottom: 100%;
+    padding:1px 16px;
+  }
+
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $primary-font-size;;
+  }
+  ol{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+  }
+  
+  div form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-left:35%;
+    margin-top: 10%;
+    padding:1px 16px;
+    height:1000px;
+  }
+
+  .message_box{
+    height: 50px;
+    width: 500px;
+  }
+
+  div form input{
+    border-style: $dashed-border;
+  }
